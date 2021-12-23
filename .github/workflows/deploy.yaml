@@ -1,0 +1,45 @@
+name: Build and Deploy To GitHub Pages.
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NODE_ENV: production
+  GENERATE_SOURCEMAP: false
+
+jobs:
+  setup-build-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Checkout
+        run: |-
+          git config --global user.name 'Ali Khamesy'
+          git config --global user.email 'alikhamesy0@gmail.com'
+          git fetch
+      - name: Install Dependencies
+        run: |-
+          npm install
+        working-directory: ./
+
+      - name: Build
+        run: |-
+          npm run build
+        working-directory: ./
+
+      - name: Switch to deployment branch
+        run: |-
+          git checkout deployment
+          find . -depth -mindepth 1 ! -regex '^\(./build\(/.*\)?\|./README.md\|./\..*\)' -delete
+          mv build/* .
+          rmdir build
+          cp index.html 404.html
+      - name: Deploy
+        run: |-
+          git add .
+          git commit -m "[Automated] Deploy build"
+          git push -f origin deployment

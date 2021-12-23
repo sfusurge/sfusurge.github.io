@@ -1,0 +1,22 @@
+img.loading {
+  display: none;
+}
+
+span.fallback {
+  $dark: #afafaf;
+  $light: #c4c4c4;
+
+  display: block;
+  background: linear-gradient(-45deg, $dark 30%, $light 50%, $dark 70%);
+  background-size: 450% 100%;
+  animation: loading 2s ease-in-out 0s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}

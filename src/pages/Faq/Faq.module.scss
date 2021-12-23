@@ -1,0 +1,41 @@
+@use '../../index.scss' as *;
+
+.container {
+  background: url('../../assets/backgrounds/hotPinkBackground.png') top center
+    fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: left;
+  padding-bottom: 300px;
+
+  .innerContainer {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    padding: 350px 14% 85px;
+    margin: auto;
+
+    @include media(500px) {
+      padding-top: 150px;
+    }
+
+    .title {
+      width: 100%;
+      @include regular(48px, Poppins, 24px);
+      color: #de2bc4;
+      margin: 0;
+
+      .bold {
+        @include semiBold(48px, Poppins, 24px);
+      }
+    }
+  }
+
+  .backgroundImg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,118 @@
+@use '../../index.scss' as *;
+
+.container {
+  width: 100%;
+  padding-bottom: 400px;
+  background: url('../../assets/backgrounds/peachBackground.svg') top center
+    fixed no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  overflow: hidden;
+  text-align: left;
+
+  .stormHacks,
+  .surge {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin: auto;
+    padding: 0 24px;
+    width: min(calc(100% - 48px), 1500px);
+
+    .img {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+
+    .text {
+      max-width: 750px;
+      flex: 1 1 300px;
+      padding-top: 177px;
+
+      .title {
+        @include medium(48px, Poppins, 24px);
+        color: #ea8033;
+        margin: 0 0 18px 0;
+
+        .bold {
+          @include semiBold(48px, Poppins, 24px);
+          white-space: nowrap;
+        }
+      }
+
+      .paragraph {
+        @include medium(16px, Barlow);
+        margin: 0;
+        margin-top: 30px;
+      }
+
+      .bigDetails {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        // max-width: 575px;
+        gap: 20px 30px;
+        @include semiBold(24px, Barlow, 20px);
+
+        .icon {
+          padding-right: 20px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .applyBtn {
+        @include semiBold(24px, Poppins);
+        width: 178px;
+        display: flex;
+        margin-top: 32px;
+        flex-direction: row;
+        align-items: center;
+        padding: 14px 12%;
+        color: #ea8033;
+        border: solid 1px #ea8033;
+
+        .editIcon {
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+
+  .stormHacks {
+    .img {
+      padding-top: 20px;
+      width: 600px;
+      aspect-ratio: 603 / 794;
+    }
+  }
+
+  .surge {
+    padding-bottom: 118px;
+    .img {
+      width: 600px;
+      aspect-ratio: 362/331;
+      padding: 20px 0;
+    }
+  }
+
+  .execGroup {
+    $photo-size: 100px;
+
+    margin-top: 19px;
+    display: grid;
+    grid-gap: 38px;
+    grid-template-columns: repeat(auto-fit, minmax($photo-size, 1fr));
+    padding: 0 10%;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+
+    .headshot {
+      object-fit: cover;
+      border-radius: 100%;
+      width: $photo-size;
+      height: $photo-size;
+    }
+  }
+}

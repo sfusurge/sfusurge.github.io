@@ -1,0 +1,105 @@
+@use '../../index.scss' as *;
+
+.background {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 400px;
+  background: url('../../assets/backgrounds/blushPinkBackground.svg') top center
+    fixed no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  text-align: left;
+
+  .container {
+    padding: 250px 16px 0;
+    @include mobile {
+      padding: 100px 16px 0;
+      width: calc(100% - 32px);
+    }
+    width: min(70%, 1000px);
+    margin: auto;
+
+    .title {
+      @include regular(48px, Poppins, 32px);
+      color: #d10b00;
+      margin: 0;
+      line-height: 40px;
+      .headingBold {
+        @include semiBold(40px, Poppins, 32px);
+        margin: 0;
+      }
+    }
+
+    .paragraph {
+      @include medium(16px, 'Barlow');
+      margin: 0;
+    }
+
+    .subTitle {
+      @include semiBold(24px, 'Poppins');
+      color: #d10b00;
+      margin: 0;
+      margin-top: 53px;
+    }
+
+    .subFooter {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 19px;
+      column-gap: 20px;
+
+      .buttonText {
+        @include semiBold(24px, 'Poppins');
+        width: 200px;
+        color: #d10b00;
+        border: solid 1px #d10b00;
+        display: flex;
+        padding: 16px 4%;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          padding-left: 5px;
+        }
+      }
+
+      .normalText {
+        @include regular(16px, 'Poppins');
+        flex: 1 1 200px;
+        color: $black;
+
+        .semiBold {
+          @include semiBold(16px, 'Poppins');
+        }
+      }
+    }
+
+    .sponsorSection {
+      width: 100%;
+      padding-bottom: 200px;
+      padding-top: 50px;
+
+      .otterCloudsImg {
+        width: 100%;
+        aspect-ratio: 965/189;
+      }
+
+      .sponsorsList {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        // display: grid;
+        // justify-content: center;
+        // grid-column-gap: 6px;
+        // grid-row-gap: 6px;
+        // grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+
+        .sponsorCol {
+          flex: 1 33%;
+        }
+      }
+    }
+  }
+}

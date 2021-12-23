@@ -1,0 +1,66 @@
+@use '../../index.scss' as *;
+
+.container {
+  padding-top: 54px;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 28px;
+  min-height: 1000px;
+  width: 100%;
+
+  .set {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 35px;
+    flex: 1 1 300px;
+
+    &:first-child {
+      padding-bottom: 35px;
+    }
+
+    .question {
+      .header {
+        @include semiBold(15px, Poppins);
+        color: $white;
+        width: calc(100% - 56px);
+        text-align: left;
+        padding: 18px 32px 18px 24px;
+        background: $hotPink;
+      }
+
+      .dropdown {
+        stroke: $white;
+        stroke-width: 2px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.answer {
+  @include regular(16px, Barlow);
+  border: 1px solid $hotPink;
+  background: rgba(255, 136, 238, 0.3);
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: auto;
+  }
+
+  .columns {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .columns {
+    width: 82%;
+  }
+}

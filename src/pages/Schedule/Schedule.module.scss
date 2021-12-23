@@ -1,0 +1,97 @@
+@use '../../index.scss' as *;
+
+.container {
+  background: url('../../assets/backgrounds/lilacRectangle.png') top center
+    fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  padding: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding-bottom: 300px;
+  padding-top: 100px;
+  @include mobile {
+    padding-top: 0;
+  }
+
+  .text {
+    padding: 118px 45px 0 45px;
+    max-width: 750px;
+    text-align: left;
+    flex: 1 1 460px;
+
+    .title {
+      @include regular(48px, Poppins, 32px);
+      margin: 0;
+      color: $darkPurple;
+
+      .bold {
+        @include semiBold(48px, Poppins, 32px);
+      }
+    }
+
+    .subTitle {
+      @include medium(16px, Barlow);
+      margin: 0;
+    }
+
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 20px 24px;
+      padding: 35px 0;
+
+      .social {
+        @include medium(16px, Barlow);
+      }
+
+      .hyperLink {
+        width: 24px;
+        height: 24px;
+        padding-right: 5px;
+      }
+    }
+
+    .apply {
+      border: 1px solid $darkPurple;
+      padding-left: 3%;
+      padding-top: 27px;
+      padding-bottom: 20px;
+      padding-right: 10%;
+
+      .title {
+        @include medium(24px, Barlow);
+        display: flex;
+        align-items: center;
+        color: $darkPurple;
+
+        .icon {
+          padding-left: 2%;
+        }
+      }
+
+      .bodyText {
+        @include medium(16px, Barlow);
+        margin-top: 10px;
+
+        .semiBold {
+          @include bold(16px, Barlow);
+        }
+
+        .thin {
+          @include regular(16px, Barlow);
+        }
+      }
+    }
+  }
+
+  .flyingBoat {
+    width: min(100%, 700px);
+    flex: 0 0 auto;
+    aspect-ratio: 958/698;
+  }
+}
