@@ -1,0 +1,30 @@
+img.loading {
+  display: none;
+}
+
+span.fallback {
+  display: block;
+  background: linear-gradient(-45deg, #afafaf 30%, #c4c4c4 50%, #afafaf 70%);
+  background-size: 450% 100%;
+  -webkit-animation: loading 2s ease-in-out 0s infinite;
+          animation: loading 2s ease-in-out 0s infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+/*# sourceMappingURL=Image.module.css.map */

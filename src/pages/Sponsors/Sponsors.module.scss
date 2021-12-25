@@ -25,7 +25,7 @@
       margin: 0;
       line-height: 40px;
       .headingBold {
-        @include semiBold(40px, Poppins, 32px);
+        @include semiBold(48px, Poppins, 32px);
         margin: 0;
       }
     }

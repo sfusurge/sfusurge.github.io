@@ -75,6 +75,11 @@ const execs = [
     link: 'https://www.linkedin.com/in/sjhe/'
   },
   {
+    src: './hussain.png',
+    name: 'Hussain Attarwala',
+    link: 'https://www.linkedin.com/in/hussain-attarwala-69b849205/'
+  },
+  {
     src: './michelle.png',
     name: 'Michelle Swolfs',
     link: 'https://www.linkedin.com/in/michelleswolfs/'
@@ -93,11 +98,6 @@ const execs = [
     src: './nathan.png',
     name: 'Nathan Lew',
     link: 'https://www.linkedin.com/in/nlew/'
-  },
-  {
-    src: './jeanette.png',
-    name: 'Jeanette Andrews',
-    link: 'https://www.linkedin.com/in/jeanette-andrews/'
   },
   {
     src: './therese.png',

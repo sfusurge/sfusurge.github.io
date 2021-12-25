@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAKpB;;AATD,AAME,UANQ,AAMP,MAAM,CAAC;EACN,cAAc,EAAE,GAAG;CACpB",
+    "sources": [
+        "ImageLink.module.scss"
+    ],
+    "names": [],
+    "file": "ImageLink.module.css"
+}

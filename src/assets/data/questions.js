@@ -48,7 +48,7 @@ const questions = [
     {
       question: 'How much does it cost?',
       answer:
-        'Admission to StormHacks is completely free for those w are eligible. We will provide all the resources you need to build incredible and impactful projects.'
+        'Admission to StormHacks is completely free for those who are eligible. We will provide all the resources you need to build incredible and impactful projects.'
     },
     {
       question: 'How many people can be on a team?',
