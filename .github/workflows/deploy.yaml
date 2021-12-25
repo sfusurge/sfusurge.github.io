@@ -23,7 +23,7 @@ jobs:
           git fetch
       - name: Install Dependencies
         run: |-
-          npm install
+          npm run install
         working-directory: ./
 
       - name: Build
@@ -33,7 +33,7 @@ jobs:
 
       - name: Switch to deployment branch
         run: |-
-          git checkout deployment
+          git checkout -f --ours deployment
           find . -depth -mindepth 1 ! -regex '^\(./build\(/.*\)?\|./README.md\|./\..*\)' -delete
           mv build/* .
           rmdir build
