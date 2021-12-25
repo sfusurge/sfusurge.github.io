@@ -4,7 +4,7 @@ import timer from '../../assets/pageIcons/timer.svg'
 import trophy from '../../assets/pageIcons/trophy.svg'
 import person from '../../assets/pageIcons/person.svg'
 import internet from '../../assets/pageIcons/internet.svg'
-import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
+// import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
 import dreamDesignDevelop from '../../assets/dreamDesignDevelop.svg'
 import otterEyesClosed from '../../assets/otterEyesClosed.svg'
 import execs from '../../assets/data/execs'
@@ -44,8 +44,8 @@ const About = () => {
             globe. Over the course of 36 hours, you will have the opportunity to
             design and develop a project that tackles real-world problems with
             innovation and insight. If this is your first time attending a
-            hackathon, don't worry—we'll have plenty of workshops and mentors
-            to support you along the way.
+            hackathon, don't worry—we'll have plenty of workshops and mentors to
+            support you along the way.
           </p>
           <p className={styles.paragraph}>
             StormHacks 2021 brought together 300+ hackers from 146 universities,
@@ -56,9 +56,7 @@ const About = () => {
             Apply Now
             <EditIcon className={styles.editIcon} />
           </a> */}
-          <div className={styles.applyBtn}>
-            Applications open Dec 27th
-          </div>
+          <div className={styles.applyBtn}>Applications open Dec 27th</div>
         </div>
         <Image className={styles.img} src={dreamDesignDevelop} />
       </div>
