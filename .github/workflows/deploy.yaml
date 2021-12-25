@@ -20,7 +20,8 @@ jobs:
         run: |-
           git config --global user.name 'Ali Khamesy'
           git config --global user.email 'alikhamesy0@gmail.com'
-          git fetch
+          git pull
+          git reset --hard HEAD
       - name: Install Dependencies
         run: |-
           npm install
@@ -33,7 +34,7 @@ jobs:
 
       - name: Switch to deployment branch
         run: |-
-          git checkout -f --ours deployment
+          git checkout -f deployment
           find . -depth -mindepth 1 ! -regex '^\(./build\(/.*\)?\|./README.md\|./\..*\)' -delete
           mv build/* .
           rmdir build
