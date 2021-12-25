@@ -39,12 +39,12 @@ const About = () => {
             </ImageLink>
           </div>
           <p className={styles.paragraph}>
-            From February 18-20, 2021, StormHacks welcomes you to collaborate,
+            From February 18-20, 2022, StormHacks welcomes you to collaborate,
             create, and connect with a community of 500+ students across the
             globe. Over the course of 36 hours, you will have the opportunity to
             design and develop a project that tackles real-world problems with
             innovation and insight. If this is your first time attending a
-            hackathon, don't worry— we'll have plenty of workshops and mentors
+            hackathon, don't worry—we'll have plenty of workshops and mentors
             to support you along the way.
           </p>
           <p className={styles.paragraph}>
@@ -52,10 +52,13 @@ const About = () => {
             with 45% of participants being first-time hackers. StormHacks is
             SFU's largest hackathon and an MLH Member Event for the 2022 Season.
           </p>
-          <a className={styles.applyBtn} href="/">
+          {/* <a className={styles.applyBtn} href="/">
             Apply Now
             <EditIcon className={styles.editIcon} />
-          </a>
+          </a> */}
+          <div className={styles.applyBtn}>
+            Applications open Dec 27th
+          </div>
         </div>
         <Image className={styles.img} src={dreamDesignDevelop} />
       </div>

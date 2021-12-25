@@ -62,13 +62,17 @@
       }
 
       .applyBtn {
-        @include semiBold(24px, Poppins);
-        width: 178px;
+        @include semiBold(18px, Poppins);
+        // TODO: uncomment/replace when applications open
+        width: 260px;
+        // width: 178px;
         display: flex;
         margin-top: 32px;
         flex-direction: row;
         align-items: center;
-        padding: 14px 12%;
+        justify-content: center;
+        // padding: 14px 12%;
+        padding: 14px 3%;
         color: #ea8033;
         border: solid 1px #ea8033;
 
