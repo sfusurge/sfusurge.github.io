@@ -23,7 +23,7 @@ jobs:
           git fetch
       - name: Install Dependencies
         run: |-
-          npm run install
+          npm install
         working-directory: ./
 
       - name: Build
