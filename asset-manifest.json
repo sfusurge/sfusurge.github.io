@@ -1,14 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.7fcbfb94.chunk.css",
-    "main.js": "/static/js/main.64104a58.chunk.js",
-    "main.js.map": "/static/js/main.64104a58.chunk.js.map",
+    "main.css": "/static/css/main.35716404.chunk.css",
+    "main.js": "/static/js/main.bd8c011f.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.072e9177.js",
-    "runtime-main.js.map": "/static/js/runtime-main.072e9177.js.map",
     "static/js/2.e1e75d63.chunk.js": "/static/js/2.e1e75d63.chunk.js",
-    "static/js/2.e1e75d63.chunk.js.map": "/static/js/2.e1e75d63.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7fcbfb94.chunk.css.map": "/static/css/main.7fcbfb94.chunk.css.map",
     "static/js/2.e1e75d63.chunk.js.LICENSE.txt": "/static/js/2.e1e75d63.chunk.js.LICENSE.txt",
     "static/media/about-us.57bcdb69.png": "/static/media/about-us.57bcdb69.png",
     "static/media/alex.png": "/static/media/alex.cc2de664.png",
@@ -24,7 +20,6 @@
     "static/media/denzel.png": "/static/media/denzel.9798af89.png",
     "static/media/discord.234531df.svg": "/static/media/discord.234531df.svg",
     "static/media/dreamDesignDevelop.bfbc1b27.svg": "/static/media/dreamDesignDevelop.bfbc1b27.svg",
-    "static/media/edit-orange.c98abd45.svg": "/static/media/edit-orange.c98abd45.svg",
     "static/media/editIcon.6bcc13ca.svg": "/static/media/editIcon.6bcc13ca.svg",
     "static/media/email-black.3afaf31f.svg": "/static/media/email-black.3afaf31f.svg",
     "static/media/email.5184b7de.svg": "/static/media/email.5184b7de.svg",
@@ -88,7 +83,7 @@
   "entrypoints": [
     "static/js/runtime-main.072e9177.js",
     "static/js/2.e1e75d63.chunk.js",
-    "static/css/main.7fcbfb94.chunk.css",
-    "static/js/main.64104a58.chunk.js"
+    "static/css/main.35716404.chunk.css",
+    "static/js/main.bd8c011f.chunk.js"
   ]
 }
