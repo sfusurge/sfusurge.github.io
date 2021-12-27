@@ -173,4 +173,18 @@
       width: 40px;
     }
   }
+
+  .mlhBanner {
+    position: absolute;
+    right: 2%;
+    top: 0px;
+    width: min(137px, 15%);
+  }
+
+  .mlhBannerMobile {
+    position: absolute;
+    left: 5%;
+    top: 0px;
+    width: 80px;
+  }
 }
