@@ -28,7 +28,7 @@ const getTime = (dueDate: string) => {
 const About = () => {
   const applicationsOpenTime = '2021-12-27T08:00:00Z'
   /* TODO: change applications closed deadline */
-  const dueDate = '2022-01-31T08:00:00Z'
+  const dueDate = '2022-01-28T08:00:00Z'
   const applicationsOpen = getTime(applicationsOpenTime)
   const timeLeft = getTime(dueDate)
   return (
