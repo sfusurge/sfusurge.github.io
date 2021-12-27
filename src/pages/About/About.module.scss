@@ -32,7 +32,7 @@
 
       .title {
         @include medium(48px, Poppins, 24px);
-        color: #F06500;
+        color: $orange;
         margin: 0 0 18px 0;
 
         .bold {
@@ -62,19 +62,15 @@
       }
 
       .applyBtn {
-        @include semiBold(18px, Poppins);
-        // TODO: uncomment/replace when applications open
-        width: 260px;
-        // width: 178px;
+        @include semiBold(24px, Poppins);
+        width: 178px;
         display: flex;
         margin-top: 32px;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        // padding: 14px 12%;
-        padding: 14px 3%;
-        color: #ea8033;
-        border: solid 1px #ea8033;
+        padding: 14px 12%;
+        color: $orange;
+        border: solid 1px $orange;
 
         .editIcon {
           padding-left: 4px;
