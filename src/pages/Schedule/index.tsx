@@ -89,24 +89,33 @@ const Schedule = () => {
             </div>
           ))}
         </div>
-        <a href="/schedule" className={styles.apply}>
-          <p className={styles.title}>
-            Apply now
-            <EditIcon className={styles.icon} />
-          </p>
+        <div className={styles.apply}>
           {timeLeft ? (
-            <p className={styles.bodyText}>
-              Heads up, there’s{' '}
-              <span className={styles.semiBold}>
-                {timeLeft?.days} days, {timeLeft?.hours} hours,{' '}
-                {timeLeft?.minutes} minutes and {timeLeft?.seconds} seconds{' '}
-              </span>{' '}
-              <span className={styles.thin}>until applications close!</span>
-            </p>
+            <>
+              <a
+                className={styles.applyBtn}
+                href="https://form.typeform.com/to/xvjiDqqp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className={styles.title}>
+                  Apply now
+                  <EditIcon className={styles.icon} />
+                </p>
+              </a>
+              <p className={styles.bodyText}>
+                Heads up, there’s{' '}
+                <span className={styles.semiBold}>
+                  {timeLeft?.days} days, {timeLeft?.hours} hours,{' '}
+                  {timeLeft?.minutes} minutes and {timeLeft?.seconds} seconds{' '}
+                </span>{' '}
+                <span className={styles.thin}>until applications close!</span>
+              </p>
+            </>
           ) : (
-            <p className={styles.bodyText}> Applications are now closed </p>
+            <p className={styles.bodyText}> Applications are now closed. </p>
           )}
-        </a>
+        </div>
       </div>
 
       <Image className={styles.flyingBoat} src={flyingBoat} alt={flyingBoat} />

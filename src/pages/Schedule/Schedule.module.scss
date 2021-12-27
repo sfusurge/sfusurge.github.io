@@ -73,6 +73,10 @@
         }
       }
 
+      .title:hover {
+        text-decoration: underline;
+      }
+
       .bodyText {
         @include medium(16px, Barlow);
         margin-top: 10px;
