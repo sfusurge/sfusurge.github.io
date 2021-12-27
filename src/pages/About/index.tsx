@@ -5,6 +5,7 @@ import trophy from '../../assets/pageIcons/trophy.svg'
 import person from '../../assets/pageIcons/person.svg'
 import internet from '../../assets/pageIcons/internet.svg'
 import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
+import { calculateTimeLeft } from '../../utils/timeLeft'
 import dreamDesignDevelop from '../../assets/dreamDesignDevelop.svg'
 import otterEyesClosed from '../../assets/otterEyesClosed.svg'
 import execs from '../../assets/data/execs'
@@ -16,7 +17,20 @@ const execResolver = require.context(
   /.*\.png|Jpeg/
 )
 
+const getTime = (dueDate: string) => {
+  const timeLeft = calculateTimeLeft(dueDate)
+  if (timeLeft) {
+    return timeLeft
+  }
+  return null
+}
+
 const About = () => {
+  const applicationsOpenTime = '2021-12-27T08:00:00Z'
+  /* TODO: change applications closed deadline */
+  const dueDate = '2022-01-31T08:00:00Z'
+  const applicationsOpen = getTime(applicationsOpenTime)
+  const timeLeft = getTime(dueDate)
   return (
     <div className={styles.container}>
       <div className={styles.stormHacks}>
@@ -39,22 +53,44 @@ const About = () => {
             </ImageLink>
           </div>
           <p className={styles.paragraph}>
-            From February 18-20, 2021, StormHacks welcomes you to collaborate,
+            From February 18-20, 2022, StormHacks welcomes you to collaborate,
             create, and connect with a community of 500+ students across the
             globe. Over the course of 36 hours, you will have the opportunity to
             design and develop a project that tackles real-world problems with
             innovation and insight. If this is your first time attending a
-            hackathon, don't worry— we'll have plenty of workshops and mentors
-            to support you along the way.
+            hackathon, don't worry—we'll have plenty of workshops and mentors to
+            support you along the way.
           </p>
           <p className={styles.paragraph}>
             StormHacks 2021 brought together 300+ hackers from 146 universities,
             with 45% of participants being first-time hackers. StormHacks is
             SFU's largest hackathon and an MLH Member Event for the 2022 Season.
           </p>
-          <a className={styles.applyBtn} href="/">
-            Apply Now
-            <EditIcon className={styles.editIcon} />
+          {/* TODO: Update typeform link when ready */}
+          <a
+            className={styles.applyBtn}
+            href={
+              !applicationsOpen && timeLeft
+                ? 'https://form.typeform.com/to/xvjiDqqp'
+                : '/'
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            {applicationsOpen ? (
+              'Applications open Dec 27th'
+            ) : (
+              <>
+                {timeLeft ? (
+                  <>
+                    Apply Now
+                    <EditIcon className={styles.editIcon} />
+                  </>
+                ) : (
+                  <>Applications closed</>
+                )}
+              </>
+            )}
           </a>
         </div>
         <Image className={styles.img} src={dreamDesignDevelop} />

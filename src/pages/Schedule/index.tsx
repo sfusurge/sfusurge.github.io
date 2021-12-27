@@ -54,11 +54,17 @@ const Schedule = () => {
     }
   ]
 
-  const dueDate = '2021-12-27T00:00:00Z'
+  const applicationsOpen = '2021-12-27T08:00:00Z'
+  /* TODO: change applications closed deadline */
+  const dueDate = '2022-01-31T08:00:00Z'
+  const [applicationsOpenCountDown, setApplicationsOpenCountDown] = useState(
+    getTime(applicationsOpen)
+  )
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
     const timer = setInterval(() => {
+      setApplicationsOpenCountDown(getTime(applicationsOpen))
       setTimeLeft(getTime(dueDate))
     }, 1000)
     return () => clearInterval(timer)
@@ -89,22 +95,48 @@ const Schedule = () => {
             </div>
           ))}
         </div>
-        <a href="/schedule" className={styles.apply}>
+        {/* TODO: Update typeform link when ready */}
+        <a
+          href={
+            !applicationsOpenCountDown && timeLeft
+              ? 'https://form.typeform.com/to/xvjiDqqp'
+              : '/schedule'
+          }
+          target="_blank"
+          rel="noreferrer"
+          className={styles.apply}
+        >
           <p className={styles.title}>
             Apply Now
             <EditIcon className={styles.icon} />
           </p>
-          {timeLeft ? (
+          {applicationsOpenCountDown ? (
             <p className={styles.bodyText}>
               Heads up, there’s{' '}
               <span className={styles.semiBold}>
-                {timeLeft?.days} days, {timeLeft?.hours} hours,{' '}
-                {timeLeft?.minutes} minutes and {timeLeft?.seconds} seconds{' '}
+                {applicationsOpenCountDown?.days} days,{' '}
+                {applicationsOpenCountDown?.hours} hours,{' '}
+                {applicationsOpenCountDown?.minutes} minutes and{' '}
+                {applicationsOpenCountDown?.seconds} seconds{' '}
               </span>{' '}
               <span className={styles.thin}>until applications open!</span>
             </p>
           ) : (
-            <p className={styles.bodyText}> Applications are now closed </p>
+            <>
+              {timeLeft ? (
+                <p className={styles.bodyText}>
+                  Don’t leave your application to the last minute. Just as a
+                  heads up, there’s{' '}
+                  <span className={styles.semiBold}>
+                    {timeLeft?.days} days, {timeLeft?.hours} hours,{' '}
+                    {timeLeft?.minutes} minutes and {timeLeft?.seconds} seconds{' '}
+                  </span>{' '}
+                  <span className={styles.thin}>until applications Close!</span>
+                </p>
+              ) : (
+                <p className={styles.bodyText}> Applications are now closed </p>
+              )}
+            </>
           )}
         </a>
       </div>
