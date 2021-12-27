@@ -9,7 +9,7 @@ import dreamDesignDevelop from '../../assets/dreamDesignDevelop.svg'
 import otterEyesClosed from '../../assets/otterEyesClosed.svg'
 import execs from '../../assets/data/execs'
 import ImageLink from '../../components/ImageText'
-import { calculateTimeLeft, formatDoubleDigitTime } from '../../utils/timeLeft'
+import { calculateTimeLeft } from '../../utils/timeLeft'
 
 const getTime = (dueDate: string) => {
   const timeLeft = calculateTimeLeft(dueDate)
