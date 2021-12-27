@@ -3,8 +3,13 @@ import Image from '../../components/Image'
 import timer from '../../assets/pageIcons/timer.svg'
 import trophy from '../../assets/pageIcons/trophy.svg'
 import person from '../../assets/pageIcons/person.svg'
+<<<<<<< HEAD
 import internet from '../../assets/pageIcons/internet.svg'
 // import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
+=======
+import internet from '../../assets/pageIcons/earth.svg'
+import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
+>>>>>>> bcf9973 (asset changes, font bug (barlow -> poppins) & application open timer)
 import dreamDesignDevelop from '../../assets/dreamDesignDevelop.svg'
 import otterEyesClosed from '../../assets/otterEyesClosed.svg'
 import execs from '../../assets/data/execs'
