@@ -55,7 +55,7 @@ const Schedule = () => {
   ]
 
   const applicationsOpen = '2021-12-27T08:00:00Z'
-  const dueDate = '2022-01-28T08:00:00Z'
+  const dueDate = '2022-01-29T08:00:00Z'
   const [applicationsOpenCountDown, setApplicationsOpenCountDown] = useState(
     getTime(applicationsOpen)
   )
@@ -106,7 +106,7 @@ const Schedule = () => {
           className={styles.apply}
         >
           <p className={styles.title}>
-            Apply Now
+            Apply now
             <EditIcon className={styles.icon} />
           </p>
           {applicationsOpenCountDown ? (
@@ -118,7 +118,7 @@ const Schedule = () => {
                 {applicationsOpenCountDown?.minutes} minutes and{' '}
                 {applicationsOpenCountDown?.seconds} seconds{' '}
               </span>{' '}
-              <span className={styles.thin}>until applications open!</span>
+              <span className={styles.thin}>until applications close!</span>
             </p>
           ) : (
             <>
