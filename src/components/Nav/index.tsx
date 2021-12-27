@@ -101,16 +101,14 @@ const Nav = () => {
   const isMobile = useQuery('(max-width: 500px)')
 
   return (
-    <>
-      <div className={styles.nav}>
-        {isMobile ? <MobileNav /> : <DesktopNav />}
-        <ImageLink
-          link="https://mlh.io/"
-          className={isMobile ? styles.mlhBannerMobile : styles.mlhBanner}
-          src={mlhbanner}
-        />
-      </div>
-    </>
+    <div className={styles.nav}>
+      {isMobile ? <MobileNav /> : <DesktopNav />}
+      <ImageLink
+        link="https://mlh.io/"
+        className={isMobile ? styles.mlhBannerMobile : styles.mlhBanner}
+        src={mlhbanner}
+      />
+    </div>
   )
 }
 
