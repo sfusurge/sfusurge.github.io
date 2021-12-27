@@ -54,7 +54,7 @@ const Schedule = () => {
     }
   ]
 
-  const dueDate = '2021-12-27T00:00:00Z'
+  const dueDate = '2022-01-29T00:00:00Z'
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
@@ -91,7 +91,7 @@ const Schedule = () => {
         </div>
         <a href="/schedule" className={styles.apply}>
           <p className={styles.title}>
-            Apply Now
+            Apply now
             <EditIcon className={styles.icon} />
           </p>
           {timeLeft ? (
@@ -101,7 +101,7 @@ const Schedule = () => {
                 {timeLeft?.days} days, {timeLeft?.hours} hours,{' '}
                 {timeLeft?.minutes} minutes and {timeLeft?.seconds} seconds{' '}
               </span>{' '}
-              <span className={styles.thin}>until applications open!</span>
+              <span className={styles.thin}>until applications close!</span>
             </p>
           ) : (
             <p className={styles.bodyText}> Applications are now closed </p>
