@@ -32,7 +32,7 @@
 
       .title {
         @include medium(48px, Poppins, 24px);
-        color: #ea8033;
+        color: $orange;
         margin: 0 0 18px 0;
 
         .bold {
@@ -73,12 +73,16 @@
         justify-content: center;
         // padding: 14px 12%;
         padding: 14px 3%;
-        color: #ea8033;
-        border: solid 1px #ea8033;
+        color: $orange;
+        border: solid 1px $orange;
 
         .editIcon {
           padding-left: 4px;
         }
+      }
+
+      .applyBtn:hover {
+        background-color: $lighterOrange;
       }
     }
   }

@@ -11,6 +11,7 @@ import { ScrollContext } from '../../context/Scroll'
 import { ReactComponent as Close } from '../../assets/close.svg'
 import { ReactComponent as Burger } from '../../assets/burger.svg'
 import { ReactComponent as Logo } from '../../assets/logo.svg'
+import mlhbanner from '../../assets/pageIcons/mlh-banner.svg'
 
 interface IPagesProps {
   onRight?: boolean
@@ -88,9 +89,11 @@ const DesktopNav = () => {
   const isSmallDesktop = useQuery('(max-width: 800px)')
 
   return (
-    <div className={styles.desktop}>
-      <Pages isSmallDesktop={isSmallDesktop} />
-    </div>
+    <>
+      <div className={styles.desktop}>
+        <Pages isSmallDesktop={isSmallDesktop} />
+      </div>
+    </>
   )
 }
 
@@ -100,6 +103,11 @@ const Nav = () => {
   return (
     <div className={styles.nav}>
       {isMobile ? <MobileNav /> : <DesktopNav />}
+      <ImageLink
+        link="https://mlh.io/"
+        className={isMobile ? styles.mlhBannerMobile : styles.mlhBanner}
+        src={mlhbanner}
+      />
     </div>
   )
 }

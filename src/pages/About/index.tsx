@@ -3,13 +3,21 @@ import Image from '../../components/Image'
 import timer from '../../assets/pageIcons/timer.svg'
 import trophy from '../../assets/pageIcons/trophy.svg'
 import person from '../../assets/pageIcons/person.svg'
-import internet from '../../assets/pageIcons/internet.svg'
-// import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
+import internet from '../../assets/pageIcons/earth.svg'
+import { ReactComponent as EditIcon } from '../../assets/pageIcons/edit-orange.svg'
 import dreamDesignDevelop from '../../assets/dreamDesignDevelop.svg'
 import otterEyesClosed from '../../assets/otterEyesClosed.svg'
 import execs from '../../assets/data/execs'
 import ImageLink from '../../components/ImageText'
+import { calculateTimeLeft, formatDoubleDigitTime } from '../../utils/timeLeft'
 
+const getTime = (dueDate: string) => {
+  const timeLeft = calculateTimeLeft(dueDate)
+  if (timeLeft) {
+    return timeLeft
+  }
+  return null
+}
 const execResolver = require.context(
   '../../assets/execs',
   false,
@@ -17,6 +25,9 @@ const execResolver = require.context(
 )
 
 const About = () => {
+  const dueDate = '2022-01-29T00:00:00Z'
+  const timeLeft = getTime(dueDate)
+
   return (
     <div className={styles.container}>
       <div className={styles.stormHacks}>
@@ -52,11 +63,19 @@ const About = () => {
             with 45% of participants being first-time hackers. StormHacks is
             SFU's largest hackathon and an MLH Member Event for the 2022 Season.
           </p>
-          {/* <a className={styles.applyBtn} href="/">
-            Apply Now
-            <EditIcon className={styles.editIcon} />
-          </a> */}
-          <div className={styles.applyBtn}>Applications open Dec 27th</div>
+          {timeLeft ? (
+            <a
+              className={styles.applyBtn}
+              href="https://form.typeform.com/to/xvjiDqqp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Apply Now
+              <EditIcon className={styles.editIcon} />
+            </a>
+          ) : (
+            <div className={styles.applyBtn}>Applications closed</div>
+          )}
         </div>
         <Image className={styles.img} src={dreamDesignDevelop} />
       </div>

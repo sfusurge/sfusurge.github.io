@@ -94,6 +94,11 @@ const execs = [
     link: 'https://www.linkedin.com/in/zoey-le/'
   },
   {
+    src: './sammy.png',
+    name: 'Samuel Darmawan',
+    link: 'https://www.linkedin.com/in/samuel-darmawan-36589a191/'
+  },
+  {
     src: './naomi.png',
     name: 'Naomi Tran',
     link: 'https://www.linkedin.com/in/naomitran/'

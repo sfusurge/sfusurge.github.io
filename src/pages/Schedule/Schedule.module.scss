@@ -63,7 +63,7 @@
       padding-right: 10%;
 
       .title {
-        @include medium(24px, Barlow);
+        @include medium(24px, Poppins);
         display: flex;
         align-items: center;
         color: $darkPurple;
@@ -71,6 +71,10 @@
         .icon {
           padding-left: 2%;
         }
+      }
+
+      .title:hover {
+        text-decoration: underline;
       }
 
       .bodyText {

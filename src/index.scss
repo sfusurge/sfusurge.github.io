@@ -10,6 +10,7 @@ $red: #d10b00;
 $salmon: #ff4b67;
 $orange: #f06500;
 $lightOrange: #ffa78c;
+$lighterOrange: #ffdbd0;
 
 @mixin media($size) {
   @media screen and (max-width: $size) {
