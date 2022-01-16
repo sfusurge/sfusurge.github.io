@@ -24,6 +24,14 @@ const Footer = () => {
               <div className={styles.bold}>StormHacks 2022</div>
             </>
           )}
+          <a
+            className={styles.hyperLink}
+            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            MLH Code Of Conduct
+          </a>
         </div>
         <div className={styles.pageOptions}>
           {pageIcons.map(({ id, src, alt, link, color }) => (
