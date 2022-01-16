@@ -30,7 +30,7 @@
     .heading {
       width: 100%;
       text-align: left;
-      padding-bottom: 40px;
+      padding-bottom: 20px;
       color: $gray;
 
       .text {
@@ -50,6 +50,15 @@
 
       .bold {
         @include semiBold(40px, Poppins);
+      }
+
+      .hyperLink {
+        @include regular(18px, Poppins);
+        text-decoration: underline;
+        width: fit-content;
+        @include mobile {
+          font-size: 16px;
+        }
       }
     }
 
