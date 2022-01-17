@@ -33,7 +33,8 @@ const execs = [
     src: './ali.png',
     name: 'Ali "...---..." Khamesy',
     link: 'https://www.linkedin.com/in/ali-khamesy/'
-  },  {
+  },
+  {
     src: './josh.png',
     name: 'Joshua "PengusTheMengus" Peng',
     link: 'https://www.linkedin.com/in/joshuapeng1999/'
@@ -52,11 +53,6 @@ const execs = [
     src: './bonnie.png',
     name: 'Bonnie Chen',
     link: 'https://www.linkedin.com/in/bonniehychen/'
-  },
-  {
-    src: './therese.png',
-    name: 'Therese Wong',
-    link: '' //TODO
   },
   {
     src: './gina.png', //TODO
@@ -94,19 +90,9 @@ const execs = [
     link: 'https://www.linkedin.com/in/zoey-le/'
   },
   {
-    src: './sammy.png',
-    name: 'Samuel Darmawan',
-    link: 'https://www.linkedin.com/in/samuel-darmawan-36589a191/'
-  },
-  {
     src: './naomi.png',
     name: 'Naomi Tran',
     link: 'https://www.linkedin.com/in/naomitran/'
-  },
-  {
-    src: './harsha.png',
-    name: 'Harsha Gidwani',
-    link: 'https://www.linkedin.com/in/harsha-gidwani-1a9576194/'
   },
   {
     src: './alex.png',
@@ -152,11 +138,6 @@ const execs = [
     src: './moe.png',
     name: 'Moe Alhatti',
     link: 'https://www.linkedin.com/in/moe-alhatti/'
-  },
-  {
-    src: './alice.png',
-    name: 'Alice Shmyk',
-    link: 'https://www.linkedin.com/in/alice-shmyk/?originalSubdomain=ca'
   },
   {
     src: './fiona.png',
