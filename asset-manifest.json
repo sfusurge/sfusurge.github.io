@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.96912dff.chunk.css",
-    "main.js": "/static/js/main.7441fdf1.chunk.js",
+    "main.css": "/static/css/main.f7155746.chunk.css",
+    "main.js": "/static/js/main.11ae81e6.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.072e9177.js",
-    "static/js/2.13cd096d.chunk.js": "/static/js/2.13cd096d.chunk.js",
+    "static/js/2.15c113ba.chunk.js": "/static/js/2.15c113ba.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.13cd096d.chunk.js.LICENSE.txt": "/static/js/2.13cd096d.chunk.js.LICENSE.txt",
+    "static/js/2.15c113ba.chunk.js.LICENSE.txt": "/static/js/2.15c113ba.chunk.js.LICENSE.txt",
     "static/media/about-us.57bcdb69.png": "/static/media/about-us.57bcdb69.png",
     "static/media/alex.png": "/static/media/alex.037066df.png",
     "static/media/ali.png": "/static/media/ali.8877c02f.png",
-    "static/media/alice.png": "/static/media/alice.3acd1031.png",
     "static/media/Sponsors.module.scss": "/static/media/blushPinkBackground.a7ddc022.svg",
     "static/media/bonnie.png": "/static/media/bonnie.ea3a05e8.png",
     "static/media/burger.f35625e9.svg": "/static/media/burger.f35625e9.svg",
@@ -39,7 +38,6 @@
     "static/media/grace.png": "/static/media/grace.c2c40ae7.png",
     "static/media/greater-than.9ed15430.svg": "/static/media/greater-than.9ed15430.svg",
     "static/media/harry.png": "/static/media/harry.0ce86327.png",
-    "static/media/harsha.png": "/static/media/harsha.cec6d570.png",
     "static/media/Faq.module.scss": "/static/media/hotPinkBackground.a6cb55b6.png",
     "static/media/hussain.png": "/static/media/hussain.f64349c0.png",
     "static/media/instagram-black.aeb238e7.svg": "/static/media/instagram-black.aeb238e7.svg",
@@ -71,12 +69,10 @@
     "static/media/praneer.png": "/static/media/praneer.f7055924.png",
     "static/media/priscilla.png": "/static/media/priscilla.edf26010.png",
     "static/media/revika.png": "/static/media/revika.e337cd88.png",
-    "static/media/sammy.png": "/static/media/sammy.f0a5d094.png",
     "static/media/schedule.644492af.png": "/static/media/schedule.644492af.png",
     "static/media/shubham.png": "/static/media/shubham.594e81a9.png",
     "static/media/sponsors.001c7341.png": "/static/media/sponsors.001c7341.png",
     "static/media/steven.png": "/static/media/steven.2b67db58.png",
-    "static/media/therese.png": "/static/media/therese.936a979c.png",
     "static/media/timer.a604b9f3.svg": "/static/media/timer.a604b9f3.svg",
     "static/media/trophy.426987fb.svg": "/static/media/trophy.426987fb.svg",
     "static/media/vivian.png": "/static/media/vivian.6804c962.png",
@@ -84,8 +80,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.072e9177.js",
-    "static/js/2.13cd096d.chunk.js",
-    "static/css/main.96912dff.chunk.css",
-    "static/js/main.7441fdf1.chunk.js"
+    "static/js/2.15c113ba.chunk.js",
+    "static/css/main.f7155746.chunk.css",
+    "static/js/main.11ae81e6.chunk.js"
   ]
 }
