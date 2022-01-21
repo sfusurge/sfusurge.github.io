@@ -10,6 +10,7 @@ import otterEyesClosed from '../../assets/otterEyesClosed.svg'
 import execs from '../../assets/data/execs'
 import ImageLink from '../../components/ImageText'
 import { calculateTimeLeft } from '../../utils/timeLeft'
+import Footer from '../../components/Footer'
 
 const getTime = (dueDate: string) => {
   const timeLeft = calculateTimeLeft(dueDate)
@@ -111,6 +112,7 @@ const About = () => {
           />
         ))}
       </div>
+      <Footer />
     </div>
   )
 }

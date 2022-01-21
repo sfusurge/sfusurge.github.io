@@ -2,6 +2,7 @@ import styles from './Faq.module.scss'
 import AllQuestions from '../../components/AllQuestions'
 import Image from '../../components/Image'
 import ottersHotPink from '../../assets/ottersHotPink.svg'
+import Footer from '../../components/Footer'
 
 const Faq = () => {
   return (
@@ -17,6 +18,7 @@ const Faq = () => {
         </p>
         <AllQuestions />
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import emailTeamIcon from '../../assets/emailTeamIcon.svg'
 import otterInTheClouds from '../../assets/otterShovel.svg'
 //eslint-disable-next-line
 import amazon from '../../assets/sponsors/amazon.png'
+import Footer from '../../components/Footer'
 
 const Sponsors = () => {
   // TODO
@@ -59,6 +60,7 @@ const Sponsors = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
