@@ -176,7 +176,7 @@
 
   .mlhBanner {
     position: absolute;
-    right: 2%;
+    left: 2%;
     top: 0px;
     width: min(137px, 15%);
   }
@@ -186,6 +186,13 @@
     left: 5%;
     top: 0px;
     width: 55px;
+    z-index: -4;
+  }
+
+  .home {
+    position: absolute;
+    right: 3%;
+    top: 60px;
     z-index: -4;
   }
 }

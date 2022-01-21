@@ -1,6 +1,10 @@
 import { useContext, useState, useEffect } from 'react'
 import ImageLink from '../ImageText'
 import pageIcons from '../../utils/pageIcons'
+import homeIcon from '../../assets/pageIcons/home.png'
+import orangeHomeIcon from '../../assets/pageIcons/orangeHome.png'
+import pinkHomeIcon from '../../assets/pageIcons/pinkHome.png'
+import redHomeIcon from '../../assets/pageIcons/redHome.png'
 import socials from '../../utils/socials'
 
 import styles from './Nav.module.scss'
@@ -12,6 +16,7 @@ import { ReactComponent as Close } from '../../assets/close.svg'
 import { ReactComponent as Burger } from '../../assets/burger.svg'
 import { ReactComponent as Logo } from '../../assets/logo.svg'
 import mlhbanner from '../../assets/pageIcons/mlh-banner.svg'
+import { useLocation } from 'react-router-dom'
 
 interface IPagesProps {
   onRight?: boolean
@@ -98,15 +103,43 @@ const DesktopNav = () => {
 }
 
 const Nav = () => {
+  const location = useLocation();
+  let icon
+  switch (location.pathname) {
+    case "/about":
+      icon = orangeHomeIcon
+      break;
+    case "/faq":
+      icon = pinkHomeIcon
+      break;
+    case "/sponsors":
+      icon = redHomeIcon
+      break;
+    default:
+      icon = homeIcon
+      break;
+  }
+
   const isMobile = useQuery('(max-width: 500px)')
 
   return (
     <div className={styles.nav}>
-      {isMobile ? <MobileNav /> : <DesktopNav />}
       <ImageLink
         link="https://mlh.io/"
         className={isMobile ? styles.mlhBannerMobile : styles.mlhBanner}
         src={mlhbanner}
+      />
+      <ImageLink
+        key="Home"
+        src={icon}
+        alt={"Home"}
+        link="/"
+        className={styles.home}
+        style={{
+          width: 75,
+          height: 75,
+          opacity: 0.9
+        }}
       />
     </div>
   )

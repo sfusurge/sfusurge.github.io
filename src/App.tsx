@@ -4,9 +4,9 @@ import styles from './App.module.scss'
 import ThemeProvider from './context/Theme'
 
 import Nav from './components/Nav'
-import Footer from './components/Footer'
 import Schedule from './pages/Schedule'
 import About from './pages/About'
+import Home from './pages/Home'
 import FAQ from './pages/Faq'
 import Sponsors from './pages/Sponsors'
 import ScrollProvider from './context/Scroll'
@@ -21,7 +21,7 @@ function App() {
             <Router>
               <Nav />
               <Switch>
-                <Route path="/" exact>
+                <Route path="/about">
                   <About />
                 </Route>
                 <Route path="/faq">
@@ -33,8 +33,10 @@ function App() {
                 <Route path="/sponsors">
                   <Sponsors />
                 </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
               </Switch>
-              <Footer />
             </Router>
           </div>
         </ScrollContainer>

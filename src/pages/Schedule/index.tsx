@@ -9,6 +9,7 @@ import discord from '../../assets/socials/discord.svg'
 import linkedin from '../../assets/socials/linkedin-black.svg'
 import flyingBoat from '../../assets/flyingBoat.svg'
 import ImageLink from '../../components/ImageText'
+import Footer from "../../components/Footer"
 
 interface ITime {
   days?: string
@@ -119,6 +120,7 @@ const Schedule = () => {
       </div>
 
       <Image className={styles.flyingBoat} src={flyingBoat} alt={flyingBoat} />
+      <Footer />
     </div>
   )
 }

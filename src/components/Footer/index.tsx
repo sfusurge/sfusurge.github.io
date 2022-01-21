@@ -20,8 +20,7 @@ const Footer = () => {
             </div>
           ) : (
             <>
-              <div className={styles.text}>Learn more today about</div>
-              <div className={styles.bold}>StormHacks 2022</div>
+              <div className={styles.text}>Learn more today about <strong>StormHacks 2022</strong></div>
             </>
           )}
           <a
