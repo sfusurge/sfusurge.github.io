@@ -30,6 +30,11 @@ const execs = [
     link: 'https://www.linkedin.com/in/danny-dong-b19a56193/'
   },
   {
+    src: './chris.png',
+    name: 'Chris Fong',
+    link: 'https://www.linkedin.com/in/chrisfong604/'
+  },
+  {
     src: './ali.png',
     name: 'Ali "...---..." Khamesy',
     link: 'https://www.linkedin.com/in/ali-khamesy/'
@@ -128,6 +133,11 @@ const execs = [
     src: './david.png',
     name: 'David Lowe',
     link: 'https://www.linkedin.com/in/davidrlowe/'
+  },
+  {
+    src: './triane.png',
+    name: 'Triane Tambay',
+    link: 'https://www.linkedin.com/in/triane-tambay/'
   },
   {
     src: './revika.png',
