@@ -1,0 +1,90 @@
+@use '../../index.scss' as *;
+
+.container {
+  width: 100%;
+  height: max-content;
+  background: url('../../assets/backgrounds/blueBackground.svg') center center
+    fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-bottom: 300px;
+  padding-top: 200px;
+  @include mobile {
+    padding-top: 150px;
+  }
+}
+
+.textGroup {
+  width: 45%;
+  padding: 0 8%;
+  text-align: left;
+  flex: 1 1 400px;
+  .title {
+    @include regular(48px, 'Poppins');
+    margin: 0;
+    color: #0075ff;
+
+    .semiBold {
+      @include semiBold(48px, 'Poppins');
+    }
+  }
+  .smallBoldText {
+    @include medium(16px, 'Barlow');
+  }
+
+  .btnGroup {
+    display: flex;
+    @include bold(16px, 'Barlow');
+    .inactiveBtn {
+      opacity: 0.5;
+      color: #0075ff;
+      padding-right: 6%;
+    }
+    .activeBtn {
+      text-decoration: underline;
+      color: #0075ff;
+      padding-right: 6%;
+    }
+  }
+
+  .blueBox {
+    width: 95%;
+    margin-top: 15px;
+    border: solid 1px #0075ff;
+    .understanding {
+      margin-top: 20px;
+      padding-left: 3%;
+      padding-right: 6%;
+
+      .question {
+        margin: 0;
+        @include regular(24px, 'Barlow');
+        font-style: italic;
+        color: #0075ff;
+        margin-top: 23px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .smallTitle {
+    display: flex;
+    @include medium(24px, 'Poppins');
+    color: #0075ff;
+  }
+  .smallParagraph {
+    @include regular(16px, 'Barlow');
+  }
+}
+
+.dragonMoonImg {
+  width: min(80%, 600px);
+  flex: 0 0 auto;
+  aspect-ratio: 310/430;
+}
