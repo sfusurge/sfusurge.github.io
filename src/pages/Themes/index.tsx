@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from './Tracks.module.scss'
+import styles from './Themes.module.scss'
 import Image from '../../components/Image'
 import motherHeart from '../../assets/pageIcons/motherHeart.svg'
 import penTip from '../../assets/pageIcons/penTip.svg'
@@ -7,7 +7,7 @@ import puzzle from '../../assets/pageIcons/puzzle.svg'
 import lightbulb from '../../assets/pageIcons/lightbulb.svg'
 import dragonMoon from '../../assets/dragonMoon.svg'
 
-const Tracks = () => {
+const Themes = () => {
   const [filter, setFilter] = useState<string>('Mental health')
   const filterTypes = ['Mental health', 'Accessibility', 'Education']
 
@@ -15,14 +15,12 @@ const Tracks = () => {
     <div className={styles.container}>
       <div className={styles.textGroup}>
         <p className={styles.title}>
-          Guide your upcoming project with{' '}
-          <span className={styles.semiBold}>event tracks</span>
+          Build your StormHacks project with our{' '}
+          <span className={styles.semiBold}>event themes</span>
         </p>
         <p className={styles.smallBoldText}>
-          It can get a little confusing about what to make during StormHacks,
-          whether you’re an experienced hacker or if it’s your first time. If
-          you’re stuck in that creative block, take a look at these themes to
-          help flesh out your next idea or solution.
+          For StormHacks 2022, your project idea must address an issue related
+          to one of the following themes:
         </p>
         <div className={styles.btnGroup}>
           {filterTypes.map(filterType => (
@@ -63,23 +61,26 @@ const Tracks = () => {
             <div className={styles.smallParagraph}>
               <p>
                 {filter === 'Mental health' &&
-                  'With people having to quarantine due to COVID-19, mental health issues amongst the population have skyrocketed or became worse due to the stress from isolation and lack of job security.'}
+                  'During the COVID-19 pandemic, concerns about mental health have grown and new barriers have arisen for people already suffering from mental illness.'}
                 {filter === 'Accessibility' &&
-                  'When we build anything, the baseline for functioning projects are for able-bodied people in our society.  With this track, we want you to think about how you can make a product that helps people outside of the able-bodied spectrum with any area of their lives. Some of these areas could be: '}
+                  'With this theme, we want you to think about how you can make a product that helps people outside of the able-bodied spectrum with any area of their lives. Some of these areas could be: '}
                 {filter === 'Education' &&
-                  'Getting an education is one of the greatest privillages that all of us share. The fact that we are able to hack together and get hands-on experience with the things we’ve learned in the classroom is something that we should all be grateful for'}
+                  'Getting an education opens many doors and opportunities, and is one of the greatest privileges we share. '}
               </p>
               <p>
                 {filter === 'Mental health' &&
-                  'However, mental health resources such as therapists are often unaffordable and many counseling services are backed up with long waitlists.  Despite these mental health crises, people can still improve their circumstances in areas which include but are not limited to: '}
+                  'Mental health resources such as therapists are often unaffordable and many counseling services are backed up with long waitlists.   Despite this mental health crisis, people can still try to improve their circumstances in areas which include but are not limited to: '}
                 {filter === 'Education' &&
-                  'Some peope aren’t able to get into a classroom. Others have ended up in a major they may not be passionate about anymore. Many others are just looking to learn something new.  How can you help people looking for a way to learn something new? How can you make education more accessible for those who need it?  '}
+                  'Some people aren’t able to get into a classroom. Others have ended up in a major they may not be passionate about anymore. Many others are just looking to learn something new. Some aspects of education you can aim to address include:'}
               </p>
               {filter === 'Mental health' && (
                 <ul>
-                  <li>Eating a more well rounded diet</li>
+                  <li>Eating a healthy, more well-rounded diet</li>
                   <li>Getting more intense and frequent exercise</li>
-                  <li>Forming new relationships or improving current ones</li>
+                  <li>
+                    Forming new relationships and building a healthy support
+                    network
+                  </li>
                   <li>Gaining access to more affordable resources</li>
                   <li>Managing their stress </li>
                 </ul>
@@ -95,13 +96,24 @@ const Tracks = () => {
                   <li>Adjusting to new languages, cultures, and places </li>
                 </ul>
               )}
+              {filter === 'Education' && (
+                <ul>
+                  <li>{'Making information and education more accessible'}</li>
+                  <li>Improving media literacy education</li>
+                  <li>Boosting engagement for online learning</li>
+                  <li>
+                    Spreading awareness about global issues and ways to tackle
+                    them
+                  </li>
+                </ul>
+              )}
               <p className={styles.question}>
                 {filter === 'Mental health' &&
-                  'What are some ways you can help people improve these areas in their life?'}
+                  'What are some ways you can help people improve these areas of their life?'}
                 {filter === 'Accessibility' &&
-                  'What are some ways in which you can make these resources more accessible/readily available to people with disabilies?'}
+                  'What are some ways in which you can make these resources more accessible/readily available to people with disabilities?'}
                 {filter === 'Education' &&
-                  'How can you make something that helps people learn outside of the classroom?'}
+                  'What can you build to help people learn?'}
               </p>
             </div>
           </div>
@@ -137,4 +149,4 @@ const Tracks = () => {
   )
 }
 
-export default Tracks
+export default Themes

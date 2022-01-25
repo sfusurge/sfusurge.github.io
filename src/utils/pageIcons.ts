@@ -34,10 +34,10 @@ const pageIcons = [
     color: '#C964FF'
   },
   {
-    id: 'Tracks',
-    alt: 'Icon to go to the tracks page',
+    id: 'Themes',
+    alt: 'Icon to go to the themes page',
     src: tracks,
-    link: '/tracks',
+    link: '/themes',
     color: '#54A2FF'
   }
 ]
