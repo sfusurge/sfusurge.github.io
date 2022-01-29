@@ -54,7 +54,7 @@ const Schedule = () => {
     }
   ]
 
-  const dueDate = '2022-01-29T00:00:00Z'
+  const dueDate = '2022-02-18T00:00:00Z'
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
