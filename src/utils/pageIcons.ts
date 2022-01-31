@@ -32,14 +32,14 @@ const pageIcons = [
     src: scheduleIcon,
     link: '/schedule',
     color: '#C964FF'
-  },
-  {
-    id: 'Themes',
-    alt: 'Icon to go to the themes page',
-    src: tracks,
-    link: '/themes',
-    color: '#54A2FF'
   }
+  // {
+  //   id: 'Themes',
+  //   alt: 'Icon to go to the themes page',
+  //   src: tracks,
+  //   link: '/themes',
+  //   color: '#54A2FF'
+  // }
 ]
 
 export default pageIcons
