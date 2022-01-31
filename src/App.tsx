@@ -34,9 +34,9 @@ function App() {
                 <Route path="/sponsors">
                   <Sponsors />
                 </Route>
-                <Route path="/themes">
+                {/* <Route path="/themes">
                   <Themes />
-                </Route>
+                </Route> */}
               </Switch>
               <Footer />
             </Router>

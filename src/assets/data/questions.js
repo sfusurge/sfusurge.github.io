@@ -38,7 +38,7 @@ const questions = [
     {
       question: 'How will we receive swag?',
       answer:
-        'Swag will be shipped out to the address you provide during registration! Please note that some swag is limited to hackers in Canada who submit a project.'
+        'Swag will be available for pick up at the SFU Burnaby Campus! Please note that some swag is limited to hackers in Canada who submit a project.'
     },
     {
       question: 'Who can participate?',
@@ -63,7 +63,7 @@ const questions = [
     {
       question: 'When do hacker applications open?',
       answer:
-      'Hacker applications are now open! You can find the application link on the About Us page. Make sure you apply by January 28th!'
+        'Hacker applications are now open! You can find the application link on the About Us page. Make sure you apply by January 28th!'
     },
     {
       question: '404: Questions not found?',
