@@ -63,7 +63,7 @@ const questions = [
     {
       question: 'When do hacker applications open?',
       answer:
-        'Hacker applications are now open! You can find the application link on the About Us page. Make sure you apply by January 28th!'
+        'Hacker applications are now open! You can find the application link on the About Us page. Make sure you apply by February 17th!'
     },
     {
       question: '404: Questions not found?',
