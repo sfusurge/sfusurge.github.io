@@ -2,7 +2,7 @@ import aboutUsIcon from '../assets/pageIcons/about-us.png'
 import faqIcon from '../assets/pageIcons/faq.png'
 import scheduleIcon from '../assets/pageIcons/schedule.png'
 import sponsorsIcon from '../assets/pageIcons/sponsors.png'
-import tracks from '../assets/pageIcons/tracks.png'
+// import tracks from '../assets/pageIcons/tracks.png'
 
 const pageIcons = [
   {
