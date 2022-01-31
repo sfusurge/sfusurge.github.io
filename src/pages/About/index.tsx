@@ -33,7 +33,7 @@ const About = () => {
       <div className={styles.stormHacks}>
         <div className={styles.text}>
           <p className={styles.title}>
-            Enter <span className={styles.bold}>StormHacks {'>'}</span>
+            Enter <span className={styles.bold}>StormHacks</span>
           </p>
           <div className={styles.bigDetails}>
             <ImageLink src={timer} className={styles.icon} onRight>
