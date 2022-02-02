@@ -1,6 +1,6 @@
 import styles from './Sponsors.module.scss'
 import Image from '../../components/Image'
-import ImageLink from '../../components/ImageText'
+//import ImageLink from '../../components/ImageText'
 import emailTeamIcon from '../../assets/emailTeamIcon.svg'
 import otterInTheClouds from '../../assets/otterShovel.svg'
 //eslint-disable-next-line
