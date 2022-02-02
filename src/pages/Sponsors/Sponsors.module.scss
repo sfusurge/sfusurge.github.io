@@ -87,19 +87,20 @@
       }
 
       .sponsorImg {
-        width: min(75%, 360px);
-        min-width: 220px;
+        width: 320px;
+        @include mobile {
+          width: 200px;
+        }
       }
 
       .sponsorsList {
         margin-top: 25px;
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-around;
         align-items: stretch;
-
         .sponsorCol {
           margin: 25px 0;
-          flex: 1 33%;
         }
       }
     }

@@ -51,12 +51,13 @@ const Sponsors = () => {
           <div className={styles.sponsorsList}>
             {sponsors.map(sponsor => (
               <div className={styles.sponsorCol}>
-                <ImageLink
-                  src={sponsorResolver(sponsor.src).default}
-                  alt={sponsor.name}
-                  className={styles.sponsorImg}
-                  link={sponsor.link}
-                ></ImageLink>
+                <a href={sponsor.link} className={styles.sponsorImg}>
+                  <Image
+                    src={sponsorResolver(sponsor.src).default}
+                    alt={sponsor.name}
+                    className={styles.sponsorImg}
+                  ></Image>
+                </a>
               </div>
             ))}
           </div>
