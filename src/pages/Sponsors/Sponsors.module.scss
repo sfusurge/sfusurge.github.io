@@ -86,17 +86,19 @@
         aspect-ratio: 965/189;
       }
 
+      .sponsorImg {
+        width: min(75%, 360px);
+        min-width: 220px;
+      }
+
       .sponsorsList {
+        margin-top: 25px;
         display: flex;
         flex-flow: row wrap;
         align-items: stretch;
-        // display: grid;
-        // justify-content: center;
-        // grid-column-gap: 6px;
-        // grid-row-gap: 6px;
-        // grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 
         .sponsorCol {
+          margin: 25px 0;
           flex: 1 33%;
         }
       }

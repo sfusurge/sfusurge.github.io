@@ -1,14 +1,21 @@
 import styles from './Sponsors.module.scss'
 import Image from '../../components/Image'
+import ImageLink from '../../components/ImageText'
 import emailTeamIcon from '../../assets/emailTeamIcon.svg'
 import otterInTheClouds from '../../assets/otterShovel.svg'
 //eslint-disable-next-line
-import amazon from '../../assets/sponsors/amazon.png'
+import sponsors from '../../assets/data/sponsors'
+
+const sponsorResolver = require.context(
+  '../../assets/sponsors',
+  false,
+  /.*\.png|Jpeg/
+)
 
 const Sponsors = () => {
   // TODO
   //eslint-disable-next-line
-  const sponsors = ['amazon', 'amazon', 'amazon', 'amazon']
+
   return (
     <div className={styles.background}>
       <div className={styles.container}>
@@ -42,20 +49,16 @@ const Sponsors = () => {
             className={styles.otterCloudsImg}
           ></Image>
           <div className={styles.sponsorsList}>
-            {/*
-            
-            /To add when there are sponsors TODO
-
             {sponsors.map(sponsor => (
               <div className={styles.sponsorCol}>
-                <Image
-                  src={amazon}
-                  alt={amazon}
-                  className={styles.otterCloudsImg}
-                ></Image>
+                <ImageLink
+                  src={sponsorResolver(sponsor.src).default}
+                  alt={sponsor.name}
+                  className={styles.sponsorImg}
+                  link={sponsor.link}
+                ></ImageLink>
               </div>
             ))}
-            */}
           </div>
         </div>
       </div>
