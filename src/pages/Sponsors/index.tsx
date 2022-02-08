@@ -1,10 +1,11 @@
 import styles from './Sponsors.module.scss'
 import Image from '../../components/Image'
-//import ImageLink from '../../components/ImageText'
+import ImageLink from '../../components/ImageText'
 import emailTeamIcon from '../../assets/emailTeamIcon.svg'
 import otterInTheClouds from '../../assets/otterShovel.svg'
 //eslint-disable-next-line
 import sponsors from '../../assets/data/sponsors'
+import useQuery from '../../hooks/useQuery'
 
 const sponsorResolver = require.context(
   '../../assets/sponsors',
@@ -15,7 +16,7 @@ const sponsorResolver = require.context(
 const Sponsors = () => {
   // TODO
   //eslint-disable-next-line
-
+  const isMobile = useQuery('(max-width: 600px)')
   return (
     <div className={styles.background}>
       <div className={styles.container}>
@@ -51,13 +52,13 @@ const Sponsors = () => {
           <div className={styles.sponsorsList}>
             {sponsors.map(sponsor => (
               <div className={styles.sponsorCol}>
-                <a href={sponsor.link} className={styles.sponsorImg}>
-                  <Image
-                    src={sponsorResolver(sponsor.src).default}
-                    alt={sponsor.name}
-                    className={styles.sponsorImg}
-                  ></Image>
-                </a>
+                <ImageLink
+                  src={sponsorResolver(sponsor.src).default}
+                  alt={sponsor.name}
+                  className={styles.sponsorImg}
+                  link={sponsor.link}
+                  style={isMobile ? sponsor.mobileStyle : sponsor.style}
+                ></ImageLink>
               </div>
             ))}
           </div>

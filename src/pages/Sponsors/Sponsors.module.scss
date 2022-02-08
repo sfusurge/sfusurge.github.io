@@ -82,15 +82,12 @@
       padding-top: 50px;
 
       .otterCloudsImg {
+        margin-top: 50px;
         width: 100%;
         aspect-ratio: 965/189;
       }
-
       .sponsorImg {
-        width: 320px;
-        @include mobile {
-          width: 200px;
-        }
+        object-fit: cover;
       }
 
       .sponsorsList {
@@ -98,9 +95,10 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        align-items: stretch;
+        align-items: center;
         .sponsorCol {
-          margin: 25px 0;
+          padding: 0 1%;
+          margin: 40px 0;
         }
       }
     }
