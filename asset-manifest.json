@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.718e714b.chunk.css",
-    "main.js": "/static/js/main.c9fc3b0e.chunk.js",
+    "main.css": "/static/css/main.78c3f01f.chunk.css",
+    "main.js": "/static/js/main.5730d4f6.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.072e9177.js",
     "static/js/2.a14eef15.chunk.js": "/static/js/2.a14eef15.chunk.js",
     "index.html": "/index.html",
@@ -26,6 +26,7 @@
     "static/media/email.f14bd383.svg": "/static/media/email.f14bd383.svg",
     "static/media/emailTeamIcon.9e33fe94.svg": "/static/media/emailTeamIcon.9e33fe94.svg",
     "static/media/emma.png": "/static/media/emma.76aef4ae.png",
+    "static/media/ergonomyx.png": "/static/media/ergonomyx.c815310b.png",
     "static/media/facebook-black.2776a862.svg": "/static/media/facebook-black.2776a862.svg",
     "static/media/facebook.e146486a.svg": "/static/media/facebook.e146486a.svg",
     "static/media/faq.fa396d50.png": "/static/media/faq.fa396d50.png",
@@ -42,6 +43,8 @@
     "static/media/hussain.png": "/static/media/hussain.f64349c0.png",
     "static/media/instagram-black.aeb238e7.svg": "/static/media/instagram-black.aeb238e7.svg",
     "static/media/instagram.a286ce80.svg": "/static/media/instagram.a286ce80.svg",
+    "static/media/intact.png": "/static/media/intact.4117679c.png",
+    "static/media/intactLab.png": "/static/media/intactLab.8608ebdf.png",
     "static/media/isshan.png": "/static/media/isshan.8b4488ab.png",
     "static/media/jaden.png": "/static/media/jaden.f636087c.png",
     "static/media/jeanette.png": "/static/media/jeanette.2c6d0ec3.png",
@@ -84,7 +87,7 @@
   "entrypoints": [
     "static/js/runtime-main.072e9177.js",
     "static/js/2.a14eef15.chunk.js",
-    "static/css/main.718e714b.chunk.css",
-    "static/js/main.c9fc3b0e.chunk.js"
+    "static/css/main.78c3f01f.chunk.css",
+    "static/js/main.5730d4f6.chunk.js"
   ]
 }
