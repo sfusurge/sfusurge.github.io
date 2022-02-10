@@ -56,13 +56,15 @@ const Sponsors = () => {
               className={styles.sponsorCol}
               id={isMobile ? styles[sponsor.mobileId] : styles[sponsor.id]}
             >
-              <ImageLink
-                src={sponsorResolver(sponsor.src).default}
-                alt={sponsor.name}
-                className={styles.sponsorImg}
-                link={sponsor.link}
-                style={isMobile ? sponsor.mobileStyle : sponsor.style}
-              ></ImageLink>
+              <div style={isMobile ? sponsor.mobileStyle : sponsor.style}>
+                <ImageLink
+                  src={sponsorResolver(sponsor.src).default}
+                  alt={sponsor.name}
+                  className={styles.sponsorImg}
+                  link={sponsor.link}
+                  style={isMobile ? sponsor.mobileStyle : sponsor.style}
+                ></ImageLink>
+              </div>
             </div>
           ))}
         </div>
