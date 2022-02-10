@@ -75,31 +75,47 @@
         }
       }
     }
+  }
+  .otterCloudsImg {
+    margin-top: 50px;
+    width: 100%;
+    aspect-ratio: 965/189;
+  }
+  .sponsorSection {
+    width: 80%;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    padding: 0 10%;
 
-    .sponsorSection {
-      width: 100%;
-      padding-bottom: 200px;
-      padding-top: 50px;
+    .sponsorImg {
+      object-fit: cover;
+    }
 
-      .otterCloudsImg {
-        margin-top: 50px;
-        width: 100%;
-        aspect-ratio: 965/189;
+    .sponsorsList {
+      margin-top: 25px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      .sponsorCol {
+        margin: 40px 0;
       }
-      .sponsorImg {
-        object-fit: cover;
+
+      #mobile {
+        flex: 1 100%;
       }
 
-      .sponsorsList {
-        margin-top: 25px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
-        .sponsorCol {
-          padding: 0 1%;
-          margin: 40px 0;
-        }
+      #goldSponsors {
+        flex: 1 50%;
+      }
+
+      #silverSponsors {
+        flex: 1 33%;
+      }
+
+      #bronzeSponsors {
+        flex: 1 33%;
       }
     }
   }
