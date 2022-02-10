@@ -82,10 +82,9 @@
     aspect-ratio: 965/189;
   }
   .sponsorSection {
-    width: 80%;
     padding-bottom: 200px;
     padding-top: 50px;
-    padding: 0 10%;
+    padding: 0 15%;
 
     .sponsorImg {
       object-fit: cover;
@@ -95,11 +94,14 @@
       margin-top: 25px;
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
 
       .sponsorCol {
         margin: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       #mobile {
