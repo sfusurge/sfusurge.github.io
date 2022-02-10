@@ -10,7 +10,7 @@ import useQuery from '../../hooks/useQuery'
 const sponsorResolver = require.context(
   '../../assets/sponsors',
   false,
-  /.*\.png|Jpeg/
+  /.*\.png|svg/
 )
 
 const Sponsors = () => {
@@ -43,25 +43,28 @@ const Sponsors = () => {
             <span className={styles.semiBold}> info@stormhacks.com </span>
           </p>
         </div>
-        <div className={styles.sponsorSection}>
-          <Image
-            src={otterInTheClouds}
-            alt={otterInTheClouds}
-            className={styles.otterCloudsImg}
-          ></Image>
-          <div className={styles.sponsorsList}>
-            {sponsors.map(sponsor => (
-              <div className={styles.sponsorCol}>
-                <ImageLink
-                  src={sponsorResolver(sponsor.src).default}
-                  alt={sponsor.name}
-                  className={styles.sponsorImg}
-                  link={sponsor.link}
-                  style={isMobile ? sponsor.mobileStyle : sponsor.style}
-                ></ImageLink>
-              </div>
-            ))}
-          </div>
+        <Image
+          src={otterInTheClouds}
+          alt={otterInTheClouds}
+          className={styles.otterCloudsImg}
+        ></Image>
+      </div>
+      <div className={styles.sponsorSection}>
+        <div className={styles.sponsorsList}>
+          {sponsors.map(sponsor => (
+            <div
+              className={styles.sponsorCol}
+              id={isMobile ? styles[sponsor.mobileId] : styles[sponsor.id]}
+            >
+              <ImageLink
+                src={sponsorResolver(sponsor.src).default}
+                alt={sponsor.name}
+                className={styles.sponsorImg}
+                link={sponsor.link}
+                style={isMobile ? sponsor.mobileStyle : sponsor.style}
+              ></ImageLink>
+            </div>
+          ))}
         </div>
       </div>
     </div>
