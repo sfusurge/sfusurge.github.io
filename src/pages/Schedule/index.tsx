@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { calculateTimeLeft, formatDoubleDigitTime } from '../../utils/timeLeft'
+// import { useState, useEffect } from 'react'
+// import { calculateTimeLeft, formatDoubleDigitTime } from '../../utils/timeLeft'
 import styles from './Schedule.module.scss'
 import Image from '../../components/Image'
 // import { ReactComponent as EditIcon } from '../../assets/pageIcons/editIcon.svg'
@@ -12,25 +12,25 @@ import friSchedule from '../../assets/scheduleFri.svg'
 import satSunSchedule from '../../assets/scheduleSatSun.svg'
 import ImageLink from '../../components/ImageText'
 
-interface ITime {
-  days?: string
-  hours?: string
-  minutes?: string
-  seconds?: string
-}
+// interface ITime {
+//   days?: string
+//   hours?: string
+//   minutes?: string
+//   seconds?: string
+// }
 
-const getTime = (dueDate: string) => {
-  const timeLeft = calculateTimeLeft(dueDate)
-  const timeString: ITime = {}
-  if (timeLeft) {
-    timeString.days = formatDoubleDigitTime(timeLeft.days)
-    timeString.hours = formatDoubleDigitTime(timeLeft.hours)
-    timeString.minutes = formatDoubleDigitTime(timeLeft.minutes)
-    timeString.seconds = formatDoubleDigitTime(timeLeft.seconds)
-    return timeString
-  }
-  return null
-}
+// const getTime = (dueDate: string) => {
+//   const timeLeft = calculateTimeLeft(dueDate)
+//   const timeString: ITime = {}
+//   if (timeLeft) {
+//     timeString.days = formatDoubleDigitTime(timeLeft.days)
+//     timeString.hours = formatDoubleDigitTime(timeLeft.hours)
+//     timeString.minutes = formatDoubleDigitTime(timeLeft.minutes)
+//     timeString.seconds = formatDoubleDigitTime(timeLeft.seconds)
+//     return timeString
+//   }
+//   return null
+// }
 
 const Schedule = () => {
   const socials = [
@@ -56,15 +56,15 @@ const Schedule = () => {
     }
   ]
 
-  const dueDate = '2022-02-18T00:00:00Z'
-  const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
+  // const dueDate = '2022-02-18T00:00:00Z'
+  // const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(getTime(dueDate))
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [])
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setTimeLeft(getTime(dueDate))
+  //   }, 1000)
+  //   return () => clearInterval(timer)
+  // }, [])
 
   return (
     <div className={styles.container}>
