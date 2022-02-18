@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 import { calculateTimeLeft, formatDoubleDigitTime } from '../../utils/timeLeft'
 import styles from './Schedule.module.scss'
 import Image from '../../components/Image'
-import { ReactComponent as EditIcon } from '../../assets/pageIcons/editIcon.svg'
+// import { ReactComponent as EditIcon } from '../../assets/pageIcons/editIcon.svg'
 import facebook from '../../assets/socials/facebook-black.svg'
 import instagram from '../../assets/socials/instagram-black.svg'
 import discord from '../../assets/socials/discord.svg'
 import linkedin from '../../assets/socials/linkedin-black.svg'
 import flyingBoat from '../../assets/flyingBoat.svg'
+import friSchedule from '../../assets/scheduleFri.svg'
+import satSunSchedule from '../../assets/scheduleSatSun.svg'
 import ImageLink from '../../components/ImageText'
 
 interface ITime {
@@ -68,13 +70,13 @@ const Schedule = () => {
     <div className={styles.container}>
       <div className={styles.text}>
         <p className={styles.title}>
-          We’ll be releasing <span className={styles.bold}>our schedule </span>
-          later on
+          <span className={styles.bold}>StormHacks 2022 Schedule</span>
         </p>
         <p className={styles.subTitle}>
-          Stay tuned for more information by following us on our social media
-          platforms.
+          Check out our schedule for the weekend below!
         </p>
+        <Image className={styles.schedule} src={friSchedule} />
+        <Image className={styles.schedule} src={satSunSchedule} />
         <div className={styles.socials}>
           {socials.map(({ image, link, name }) => (
             <div className={styles.social} key={name}>
@@ -89,7 +91,7 @@ const Schedule = () => {
             </div>
           ))}
         </div>
-        <div className={styles.apply}>
+        {/* <div className={styles.apply}>
           {timeLeft ? (
             <>
               <a
@@ -115,7 +117,7 @@ const Schedule = () => {
           ) : (
             <p className={styles.bodyText}> Applications are now closed. </p>
           )}
-        </div>
+        </div> */}
       </div>
 
       <Image className={styles.flyingBoat} src={flyingBoat} alt={flyingBoat} />
