@@ -40,7 +40,7 @@ const About = () => {
               36 Hours
             </ImageLink>
             <ImageLink src={trophy} className={styles.icon} onRight>
-              $6000+ in prizes
+              $8000+ in prizes
             </ImageLink>
             <ImageLink src={person} className={styles.icon} onRight>
               500+ hackers
