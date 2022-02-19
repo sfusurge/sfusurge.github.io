@@ -27,7 +27,7 @@ const questions = [
     },
     {
       question: 'Is there a theme for StormHacks?',
-      answer: 'Yes! We will be revealing the theme(s) closer to the event date.'
+      answer: 'Yes! Check out the Themes page for this year\'s project themes.'
     },
     {
       question: 'What platform is the event on?',

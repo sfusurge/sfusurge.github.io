@@ -2,7 +2,7 @@ import aboutUsIcon from '../assets/pageIcons/about-us.png'
 import faqIcon from '../assets/pageIcons/faq.png'
 import scheduleIcon from '../assets/pageIcons/schedule.png'
 import sponsorsIcon from '../assets/pageIcons/sponsors.png'
-// import tracks from '../assets/pageIcons/tracks.png'
+import tracks from '../assets/pageIcons/tracks.png'
 
 const pageIcons = [
   {
@@ -32,14 +32,14 @@ const pageIcons = [
     src: scheduleIcon,
     link: '/schedule',
     color: '#C964FF'
+  },
+  {
+    id: 'Themes',
+    alt: 'Icon to go to the themes page',
+    src: tracks,
+    link: '/themes',
+    color: '#54A2FF'
   }
-  // {
-  //   id: 'Themes',
-  //   alt: 'Icon to go to the themes page',
-  //   src: tracks,
-  //   link: '/themes',
-  //   color: '#54A2FF'
-  // }
 ]
 
 export default pageIcons
